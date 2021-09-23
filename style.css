@@ -346,13 +346,28 @@ color: #D2D2D2;}
 
 /**************** FOOOTER *******************/
 .small_song_cover_image{
-    height: 50px;
-    width: 50px;
+    height: 45px;
+    width: 45px;
+    margin-right: 1rem;
 }
 .small_song_cover_image img{
     object-fit: cover;
     width: 100%;
 }
+.song_info h4{
+    font-size: .8rem;
+}
+.song_info p{
+    font-size: .65rem;
+}
 
+
+.fav_icons{
+    color: #7D7F84;
+    margin-left: 3rem;
+}
+.fav_icons i{
+    margin: 0 .5rem;
+}
 
 /** FOOTER **/
