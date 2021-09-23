@@ -342,3 +342,17 @@ color: #D2D2D2;}
     background-size: cover;
     
 }
+
+
+/**************** FOOOTER *******************/
+.small_song_cover_image{
+    height: 50px;
+    width: 50px;
+}
+.small_song_cover_image img{
+    object-fit: cover;
+    width: 100%;
+}
+
+
+/** FOOTER **/
