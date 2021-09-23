@@ -12,6 +12,11 @@
 /*************** UTILITY **************** */
 
 
+.margin_top_xs{
+    margin-top: 1rem;
+
+}
+
 .flex{
     display: flex;
 }
@@ -24,7 +29,9 @@ flex-direction: column;
 .align_center{
     align-items: center;
 }
-
+.justify_column{
+    justify-content: space-between;
+}
 
 /*************** UTILITY **************** */
 
@@ -38,11 +45,19 @@ flex-direction: column;
 
 /************** TIPOGRAPHY **************/
 
-h1,h2,h3,h4{
+h1,h2,h3,h4,.userName{
     color: white;
 }
 
-p{color: #7D7F84;}
+h3{font-size: 1rem;
+
+}
+
+
+p,.playlist_list li{color: #7D7F84;
+font-size: .8rem;
+font-weight: 600;
+}
 
 
 /************** TIPOGRAPHY **************/
@@ -68,13 +83,17 @@ p{color: #7D7F84;}
 }
 
 .sidebar{
-    width:15%;
+    width:200px;
     height: 100%;
     background-color: black;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .content{
-    width: 85%;
+    min-width: 100%;
     height: 100%;
     background-color: #141922;
 }
@@ -102,7 +121,7 @@ p{color: #7D7F84;}
 /** SIDEBAR - logo**/
 
 .logo_wrapper{
-    width: 70%;
+    width: 60%;
 }
 
 .logo_complete{
@@ -119,13 +138,24 @@ p{color: #7D7F84;}
 /** SIDEBAR - NAV **/
 
 
-.sidebar_icon{width: 10%;
+
+.sidebar_text{
+    margin-left: .5rem;
+}
+
+
+.sidebar_icon{width: 13%;
 color: #D2D2D2;}
 
 /** SIDEBAR - NAV **/
 
 
+
+
 /** SIDEBAR - Playlist **/
+
+
+
 .fa-plus-square{
     color: #D2D2D2;
     font-size: 2.5rem;
@@ -136,8 +166,22 @@ color: #D2D2D2;}
     list-style: none;
 }
 
+.playlist_text{
+    margin-left: .5rem;
+}
+.playlist_list li{
+    margin-top: .5rem;
+}
+
+
+
+
 
 /** SIDEBAR - BOTTOM **/
+
+
+
+
 .fa-arrow-alt-circle-down{
     color: #7D7F84;
 }
@@ -148,11 +192,23 @@ color: #D2D2D2;}
 
 
 
+
+.app_callTo{
+    padding-bottom: .5rem;
+}
+.app_callTo p, .userName{
+    margin-left: .5rem;
+}
+
+.profile{
+    margin-top: .5rem;
+}
+
 .profile_img{
     width: 25px;
     height: 25px;
     background-color: #7D7F84;
     border-radius: 50%;
     background-image: url(./img/profile.svg);
-    background-position: bottom;
+    background-size: cover;
 }
