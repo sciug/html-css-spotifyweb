@@ -513,6 +513,19 @@ color: #7D7F84;}
 
 /******   HOVER **********/
 
+.sidebar_text, ul li,
+i, 
+.bar_bg,
+.bar_color,
+.volume_bar_bg,
+.volume_bar_color,
+.bar_color::after,
+.volume_bar_color::after
+{
+    transition: all 250ms;
+}
+
+ul li
 
 .sidebar_text:hover{
     color: #d2d2d2;
