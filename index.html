@@ -249,7 +249,7 @@
 
 
 
-        <footer id="site_footer" class="footer_content flex justify_column">
+        <footer id="site_footer" class="footer_content flex justify_column align_center">
             <div class="song_icon flex align_center">
                 <div class="song_cover_small flex align_center">
 
@@ -271,8 +271,31 @@
                 </div>
 
             </div>
-            <div class="player flex"></div>
-            <div class="player_settings flex"></div>
+            <div class="player flex flex_column justify_center">
+                <div class="player_buttons flex align_center">
+                    <i class="fas fa-random"></i>
+                    <i class="fas fa-step-backward"></i>
+                    <i class="far fa-play-circle"></i>
+                    <i class="fas fa-step-forward"></i>
+                    <i class="fas fa-circle-notch"></i>
+
+                </div>
+                <div class="player_bar flex align_center">
+                    <p class="timer timer_current">4:26</p>
+                    <div class="bar_bg">
+                        <div class="bar_color"></div>
+                    </div>
+                    <p class="timer timer_duration">4:26</p>               
+                </div>
+            </div>
+            <div class="player_settings flex">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-desktop"></i>
+                <i class="fas fa-volume-down"></i>
+                <div class="volume_bar_bg">
+                    <div class="volume_bar_color"></div>
+                </div>
+            </div>
         </footer>
     </div>
     
