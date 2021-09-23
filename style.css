@@ -148,7 +148,7 @@ font-weight: 600;
 
 .sidebar{
     width:250px;
-    height: calc(100vh - 65px);
+    height: calc(100vh - 80px);
     background-color: black;
     padding: 1rem;
     position: fixed;
@@ -179,12 +179,13 @@ font-weight: 600;
 
 
 .footer_content{
-    height: 65px;
+    height: 80px;
     width: 100%;
     background-color: #282828;
     position: fixed;
     left:0;
     bottom: 0;
+    padding:0 .5rem;
 }
 
 
@@ -370,4 +371,77 @@ color: #D2D2D2;}
     margin: 0 .5rem;
 }
 
+
+
+/* FOOTER - PLAYER */
+
+
+.player_buttons{width:30%}
+
+.player_buttons i{
+    color: white;
+    font-size: 1rem;
+}
+
+.player_buttons .fa-play-circle{
+    font-size: 1.7rem;
+}
+
+
+.player_settings i{
+    font-size: 1rem;
+    color: #D2D2D2;
+}
+
+.timer{
+    font-size: .7rem;
+    color: #D2D2D2;
+}
+
+
+
+.player_bar{
+    margin-top: .5rem;
+}
+
+.bar_bg{
+    height: 3px;
+    width: 420px;
+    background-color: #7D7F84;
+    border-radius: 3px;
+    margin: 0 1.5rem;
+
+}
+.bar_bg .bar_color{
+    height: 3px;
+    width: 200px;
+    background-color: #D2D2D2;
+    border-radius: 3px;
+
+}
+
+.volume_bar_bg{
+    height: 3px;
+    width: 100px;
+    background-color: #7D7F84;
+    border-radius: 3px;
+    margin-left: .5rem;
+}
+
+.volume_bar_color{
+    height: 3px;
+    width: 25px;
+    background-color: #D2D2D2;
+    border-radius: 3px;
+
+}
+
+.player_settings i{
+    margin-right: .7rem;
+    font-size: .8rem;
+}
+
+.player_settings .fa-volume-down{
+    margin-right: 0;
+}
 /** FOOTER **/
