@@ -319,8 +319,12 @@ color: #7D7F84;}
 
 /** CONTENT - content_nav**/
 
+
+
 .content_nav_list{
     font-weight: 700;
+    height: 40px;
+    align-content: space-between;
 
 }
 
