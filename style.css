@@ -153,7 +153,12 @@ font-weight: 600;
 
 .content .header{
     height: 75px;
-    background-color:#080B12;
+    background-color:#080b12a9;
+    position: fixed;
+    width: calc(100% - 250px);
+    top: 0;
+    right: 0;
+
 }
 
 
