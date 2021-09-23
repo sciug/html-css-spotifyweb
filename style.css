@@ -2,10 +2,14 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
 
+
+
+/*************** UTILITY **************** */
 
 
 .flex{
@@ -13,16 +17,49 @@
 }
 
 
+.flex_column{
+flex-direction: column;    
+}
+
+.align_center{
+    align-items: center;
+}
+
+
+/*************** UTILITY **************** */
+
+
+
+
+
+
+
+
+
+/************** TIPOGRAPHY **************/
+
+h1,h2,h3,h4{
+    color: white;
+}
+
+p{color: #7D7F84;}
+
+
+/************** TIPOGRAPHY **************/
+
+
+
+
+
 .body_container{
     width:100%;
     height: 100vh;
-    background: teal;
+
 }
 
 .main_content{
     height:85vh;
     width:100%;
-    background-color:tomato;
 }
 
 .main_content_wrapper{
@@ -49,3 +86,23 @@
     width: 100%;
     background-color: #282828;
 }
+
+
+
+
+
+/**************** SIDEBAR *******************/
+
+.logo_wrapper{
+    width: 70%;
+}
+
+.logo_complete{
+    width: 100%;
+}
+
+
+
+
+.sidebar_icon{width: 10%;
+color: #D2D2D2;}
