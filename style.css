@@ -48,7 +48,7 @@ p{color: #7D7F84;}
 /************** TIPOGRAPHY **************/
 
 
-
+/************** SIZES **************/
 
 
 .body_container{
@@ -88,10 +88,18 @@ p{color: #7D7F84;}
 }
 
 
+/************** SIZES **************/
+
+
 
 
 
 /**************** SIDEBAR *******************/
+
+
+
+
+/** SIDEBAR - logo**/
 
 .logo_wrapper{
     width: 70%;
@@ -102,7 +110,49 @@ p{color: #7D7F84;}
 }
 
 
+/**SIDEBAR - logo**/
+
+
+
+
+
+/** SIDEBAR - NAV **/
 
 
 .sidebar_icon{width: 10%;
 color: #D2D2D2;}
+
+/** SIDEBAR - NAV **/
+
+
+/** SIDEBAR - Playlist **/
+.fa-plus-square{
+    color: #D2D2D2;
+    font-size: 2.5rem;
+}
+
+.playlist_list{
+    color: #D2D2D2;
+    list-style: none;
+}
+
+
+/** SIDEBAR - BOTTOM **/
+.fa-arrow-alt-circle-down{
+    color: #7D7F84;
+}
+
+.app_callTo{
+    border-bottom: 1px solid #7D7F84;
+}
+
+
+
+.profile_img{
+    width: 25px;
+    height: 25px;
+    background-color: #7D7F84;
+    border-radius: 50%;
+    background-image: url(./img/profile.svg);
+    background-position: bottom;
+}
