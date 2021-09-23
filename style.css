@@ -37,7 +37,7 @@ body{
 .content_wrapper_padding{padding: 1rem 1.5rem;
     overflow-y: scroll;
     height: 100vh;
-    padding-bottom: 30rem;}
+    padding-bottom: 10rem;}
 
 
 
@@ -122,6 +122,9 @@ font-size: .8rem;
 font-weight: 600;
 }
 
+.sidebar_home{
+    color:#D2D2D2;
+}
 
 /************** TIPOGRAPHY **************/
 
@@ -218,7 +221,20 @@ font-weight: 600;
 
 
 /** SIDEBAR - NAV **/
-
+.home{position: relative;
+    color: #D2D2D2;}
+    
+    .home::before{
+        content: "";
+        height: 2rem;
+        width: 3px;
+        background-color: #1DB954
+        ;
+        position: absolute;
+        top: 0;
+        left:-1rem;
+    }
+    
 
 
 .sidebar_text{
@@ -227,7 +243,7 @@ font-weight: 600;
 
 
 .sidebar_icon{width: 13%;
-color: #D2D2D2;}
+color: #7D7F84;}
 
 /** SIDEBAR - NAV **/
 
@@ -311,7 +327,18 @@ color: #D2D2D2;}
 .content_nav_list li{
     margin: 0 .5rem;
 }
+.current{position: relative;}
 
+
+.current::after{
+    content: "";
+    height: 3px;
+    width: 1.5rem;
+    background-color: #1DB954;
+    position: absolute;
+    bottom:-5px;
+    left:40%
+}
 
 /** CONTENT - content_rows**/
 
@@ -390,7 +417,7 @@ color: #D2D2D2;}
 
 .player_settings i{
     font-size: 1rem;
-    color: #D2D2D2;
+    color: #7D7F84;
 }
 
 .timer{
@@ -410,6 +437,7 @@ color: #D2D2D2;}
     background-color: #7D7F84;
     border-radius: 3px;
     margin: 0 1.5rem;
+    cursor: pointer;
 
 }
 .bar_bg .bar_color{
@@ -417,8 +445,25 @@ color: #D2D2D2;}
     width: 200px;
     background-color: #D2D2D2;
     border-radius: 3px;
+    position: relative;
 
 }
+
+.bar_bg .bar_color::after{
+    content: "";
+    top:-3px;
+    right:-5px;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 10px;
+    background-color: #D2D2D2;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.582);
+    display: none;
+}
+
+
+
 
 .volume_bar_bg{
     height: 3px;
@@ -426,6 +471,7 @@ color: #D2D2D2;}
     background-color: #7D7F84;
     border-radius: 3px;
     margin-left: .5rem;
+    cursor: pointer;
 }
 
 .volume_bar_color{
@@ -433,8 +479,24 @@ color: #D2D2D2;}
     width: 25px;
     background-color: #D2D2D2;
     border-radius: 3px;
+    position: relative;
 
 }
+
+
+.volume_bar_bg .volume_bar_color::after{
+    content: "";
+    top:-3px;
+    right:-5px;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 10px;
+    background-color: #D2D2D2;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.582);
+    display: none;
+}
+
 
 .player_settings i{
     margin-right: .7rem;
@@ -448,29 +510,33 @@ color: #D2D2D2;}
 
 
 
-.home{position: relative;
-color: #D2D2D2;}
 
-.home::before{
-    content: "";
-    height: 2rem;
-    width: 3px;
-    background-color: #1DB954
-    ;
-    position: absolute;
-    top: 0;
-    left:-1rem;
+/******   HOVER **********/
+
+
+.sidebar_text:hover{
+    color: #d2d2d2;
+    cursor: pointer;
 }
 
-.current{position: relative;}
 
 
-.current::after{
-    content: "";
-    height: 3px;
-    width: 1.5rem;
+ul li:hover, i:hover{color: #d2d2d2;
+cursor: pointer;}
+
+
+
+.bar_bg:hover .bar_color,
+.volume_bar_bg:hover .volume_bar_color{
     background-color: #1DB954;
-    position: absolute;
-    bottom:-5px;
-    left:40%
+   
 }
+
+
+
+
+.bar_bg:hover .bar_color::after,
+.volume_bar_bg:hover .volume_bar_color::after{
+    display: block;
+}
+
