@@ -394,7 +394,7 @@ color: #D2D2D2;}
 }
 
 .timer{
-    font-size: .7rem;
+    font-size: .6rem;
     color: #D2D2D2;
 }
 
@@ -445,3 +445,32 @@ color: #D2D2D2;}
     margin-right: 0;
 }
 /** FOOTER **/
+
+
+
+.home{position: relative;
+color: #D2D2D2;}
+
+.home::before{
+    content: "";
+    height: 2rem;
+    width: 3px;
+    background-color: #1DB954
+    ;
+    position: absolute;
+    top: 0;
+    left:-1rem;
+}
+
+.current{position: relative;}
+
+
+.current::after{
+    content: "";
+    height: 3px;
+    width: 1.5rem;
+    background-color: #1DB954;
+    position: absolute;
+    bottom:-5px;
+    left:40%
+}
