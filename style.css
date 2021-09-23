@@ -67,7 +67,7 @@ flex-direction: column;
 .wrap{flex-wrap: wrap;}
 
 .gap{
-    gap: 10px;
+    gap: 15px;
 }
 
 .align_center{
@@ -166,7 +166,7 @@ font-weight: 600;
 
 .content .header{
     height: 75px;
-    background-color:#080B12;
+    background-color:#080b12b4;
     position: fixed;
     width: calc(100% - 250px);
     top: 0;
@@ -298,9 +298,6 @@ color: #D2D2D2;}
 
 /**************** CONTENT *******************/
 
-.content_sec{
-   
-}
 
 
 /** CONTENT - content_nav**/
@@ -328,3 +325,20 @@ color: #D2D2D2;}
 
 }
 
+.content_sec h2{
+    margin-top: 2.5rem;
+}
+
+.content_sec h3{
+    margin-top: 1rem;
+}
+.content_sec p{
+    margin-top: .5rem;
+}
+
+.song_circle{
+    border-radius: 50%;
+    background-image: url(./img/einaudi.jpeg);
+    background-size: cover;
+    
+}
