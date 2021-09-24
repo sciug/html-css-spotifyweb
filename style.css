@@ -265,7 +265,14 @@ font-weight: 600;
 
 
 .sidebar_icon{width: 13%;
-color: #7D7F84;}
+    fill: #7D7F84;}
+
+.sidebar_icon:hover{
+    fill: white;
+}
+
+
+
 
 /** SIDEBAR - NAV **/
 
@@ -589,16 +596,17 @@ i,
 .btn,
 .add_playlist,
 p,
-.song_cover_img::before
+.song_cover_img::before,
+.sidebar_icon
 {
     transition: all 250ms;
 }
 
-ul li
-
-.sidebar_text:hover{
-    color: #d2d2d2;
+.sidebar_nav_item:hover .sidebar_icon,
+.sidebar_nav_item:hover .sidebar_text{
+    color: white;
     cursor: pointer;
+    fill: white;
 }
 
 
