@@ -356,6 +356,7 @@ color: #7D7F84;}
     font-weight: 700;
     height: 60px;
     align-content: space-between;
+    text-align: center;
 
 }
 
@@ -757,16 +758,22 @@ cursor: pointer;}
     
     .volume_bar_bg{
        
-        width: 40px;
+        width: 35px;
         
     }
 
     .volume_bar_color{
         
-        width: 10px;}
+        width: 8px;}
         
 
-
+    .content_nav_list {
+        height: 110px;}
+    .current::after{
+        bottom: -1px;
+        height: 2px;
+    }
+    
 
 
 
@@ -837,11 +844,12 @@ cursor: pointer;}
 
     .volume_bar_color{
         
-        width: 15px;
-        
+        width: 15px;}
 
-}
 
+        .content_nav_list {
+            height: 80px;}
+            
 
 
 }
