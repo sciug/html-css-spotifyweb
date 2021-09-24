@@ -353,12 +353,45 @@ color: #7D7F84;}
 .song_cover_img{
     width: 180px;
     height: 180px;
+    position: relative;
+    
 }
 .song_cover_img img{
     width: 100%;
     object-fit: cover;
 
 }
+
+.song_cover_img::before{
+    position: absolute;
+    content: "";
+    inset: 0;
+    background:linear-gradient(172deg, 
+    rgba(0, 0, 0, 0.904) 0%,
+    rgba(32, 32, 32, 0.795) 100%);;
+    opacity: 0;
+    cursor: pointer;
+    
+}
+
+.song_cover_img.circle::before{
+   border-radius: 50%;
+}
+
+
+
+.song_cover_img .fa-play-circle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3.5rem;
+    opacity: 0;
+
+}
+
+
 
 .content_sec h2{
     margin-top: 2.5rem;
@@ -371,10 +404,9 @@ color: #7D7F84;}
     margin-top: .5rem;
 }
 
-.song_circle{
+.circle{
     border-radius: 50%;
-    background-image: url(./img/einaudi.jpeg);
-    background-size: cover;
+    
     
 }
 
@@ -580,6 +612,31 @@ cursor: pointer;}
     text-decoration: underline;
     cursor: pointer;
 }
+
+
+
+ .song_cover_img:hover::before{
+    opacity: .5;
+}
+
+
+
+.song_cover_img:hover .fa-play-circle{
+    opacity: 1;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
