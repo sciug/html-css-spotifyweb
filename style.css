@@ -562,7 +562,8 @@ i,
 .volume_bar_color::after,
 .btn,
 .add_playlist,
-p
+p,
+.song_cover_img::before
 {
     transition: all 250ms;
 }
