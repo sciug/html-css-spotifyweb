@@ -751,9 +751,23 @@ cursor: pointer;}
         width: 25px;
         }
 
+        .player{
+            width: 30%;
+        }
+
+
+
     .player_buttons {
-        width:50%;
-        justify-content: center;
+        width: 100%;
+    justify-content: space-between;
+        }
+
+
+
+
+    .player_buttons {
+        width: 100%;
+    justify-content: space-between;
         }
 
 
@@ -903,4 +917,6 @@ cursor: pointer;}
     overflow-y: scroll;
     height: 100px;
     }
+
+    .header{display: none;}
 }
