@@ -412,7 +412,6 @@ a:hover{text-decoration: underline;}
 #artist_page .song.flex.flex_column.align_center {
   
     background-color: #181818;
-    padding: .2rem;
     padding-top: 1rem;
     padding-bottom: 1.5rem;
     border-radius: 10px;
@@ -1126,6 +1125,7 @@ margin-right: 1rem;
 #artist_page .song_cover_img_list img{
     width: 100%;
     object-fit: cover;
+    border-radius: 0;
 }
 
 #artist_page .song_list{
