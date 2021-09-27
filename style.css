@@ -1020,9 +1020,84 @@ padding-left: 1rem;}
 }
 
 
+
+.segui{padding: 0 1.5rem;
+margin-top: 1.5rem;
+width: 280px;
+color: #7D7F84;}
+
+.segui .fa-play{
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    background-color: #1DB954;
+    line-height: 55px;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+   
+}
+.segui_btn{
+    border:1px solid #7D7F84;
+    padding:.4rem .6rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: .7rem;
+    color: white;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+
+
+
+#artist_page .top_songs{
+    padding: 0 1.5rem;
+    margin-top: 2rem;
+}
+
+
+#artist_page .top_songs h3{
+    text-align: left;
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+
 #artist_page .hero_bg_content p{
     color: #D2D2D2;
 }
 #artist_page .hero_bg_content h2{
     font-size: 4rem;
+}
+
+#artist_page .song_list{
+    padding: 0 2rem;
+}
+
+
+#artist_page .song_list_info .number{
+margin-right: 1rem;
+}
+#artist_page .song_list_name{
+    color:#D2D2D2;
+    margin-left: 1rem;
+}
+
+#artist_page .song_cover_img_list{
+    width: 50px;
+    height: 50px;
+}
+#artist_page .song_cover_img_list img{
+    width: 100%;
+    object-fit: cover;
+}
+
+#artist_page .song_list{
+    list-style-type: decimal;}
+
+
+#artist_page .song_list>li.song{
+    justify-content: space-between;
+    margin-bottom: 2rem;
 }
