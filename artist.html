@@ -14,7 +14,7 @@
     
 </head>
 <body>
-    <div class="body_container">
+    <div class="body_container" id="artist_page">
         <main id="site_main" class="main_content">
 
             <div class="main_content_wrapper flex">
@@ -91,23 +91,54 @@
                 </aside>
 
                 <div class="content flex flex_column">                                     <!-- CONTENT_RIGHT -->
-                    <div class="header flex justify_end align_center">    <!-- CONTENT - HEADER -->
-                        <a href="#" class="btn">effettua l'upgrade</a>
+                    <div class="header flex align_center justify_column">    <!-- CONTENT - HEADER -->
+                        <div class="nav_arrows flex">
+                            <i class="fas fa-chevron-left"></i>
+                            <i class="fas fa-chevron-right"></i>
+                         </div>
+
+
+                         <div class="btns flex">
+                            <a href="#" class="btn flex align_center">effettua l'upgrade</a>
+                            <a href="#" class="btn flex align_center utente_btn justify_column">
+                                <div class="profile_img"></div>  nome utente <i class="fas fa-caret-down"></i></a>
+                         </div>
+                        
                     </div>
                     <div class="content_wrapper_padding">
+                        <div class="hero_bg">
+                            <div class="hero_bg_content">
+                                <div class="verified flex">
+                                    <i class="fas fa-check-circle"></i>
+                                    <p>artista verificato</p>
+                                </div>
+                                <h2>Paul Kalkbrenner</h2>
+                                <p class="monthly_listeners">2.000.000 ascoltatori mensili</p>
+                            </div>
+                        </div>
+
+
+                        <div class="top_songs">
+                            <ol class="song_list">
+                                <li class="flex song">
+                                    <div class="song_cover_img">
+                                        <img src="./img/sinister.jpeg" alt="img">
+                                    </div>
+                                    <p class="views">2.000.000</p>
+                                    <p class="duration">2.48</p>
+
+                                </li>
+                            </ol>
+                        </div>
                         
+
+
+
                         <div class="content_sec margin_top_m">                              <!-- CONTENT - content and rows -->
 
-                            <nav class="content_nav">                             <!-- CONTENT - nav -->
-                                <ul class="content_nav_list flex justify_center wrap">
-                                    <li class="content_nav_list_item current">IN EVIDENZA</li>
-                                    <li class="content_nav_list_item">PODCAST</li>
-                                    <li class="content_nav_list_item">CLASSIFICHE</li>
-                                    <li class="content_nav_list_item">GENERI E MOOD</li>
-                                    <li class="content_nav_list_item">NUOVE USCITE</li>
-                                    <li class="content_nav_list_item">SCOPRI</li>
-                                </ul>
-                            </nav>
+                           
+
+                           
 
 
                             <h2>Creato per John  Doe</h2>
@@ -220,6 +251,8 @@
                         </div>
 
                     </div>
+                </div>
+                   
 
 
                 </div> 
